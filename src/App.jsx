@@ -6,7 +6,7 @@ import { FaTiktok } from "react-icons/fa6";
 // ============================================================
 const CONFIG = {
   nombre: "Aeronex",
-  eslogan: "Elevando la precisión",
+  eslogan: "Capturamos datos. Generamos decisiones.",
   // Para usar tu logo: poné el archivo en /public y escribí "/logo.png"
   avatar: "/logo.png",
   links: {
@@ -117,7 +117,7 @@ export default function App() {
             </>
           )}
           <div className="w-full max-w-xs">
-            <svg width="100%" viewBox="0 0 340 56" xmlns="http://www.w3.org/2000/svg">
+            <svg width="100%" viewBox="0 0 340 76" xmlns="http://www.w3.org/2000/svg">
               <style>{`
                 @keyframes pulse-ring { 0% { r:4; opacity:.85; } 100% { r:11; opacity:0; } }
                 @keyframes dash-move  { to { stroke-dashoffset:-24; } }
@@ -129,43 +129,41 @@ export default function App() {
                 .sl-blink { animation:blink-dot 1.4s ease-in-out infinite; }
               `}</style>
 
-              {/* Telemetría izquierda */}
-              <line x1="18" y1="28" x2="72" y2="28" stroke="#334155" strokeWidth="0.6" className="sl-dash"/>
-              <line x1="18" y1="28" x2="48" y2="16" stroke="#334155" strokeWidth="0.5" opacity="0.7"/>
-              <line x1="18" y1="28" x2="48" y2="40" stroke="#334155" strokeWidth="0.5" opacity="0.7"/>
+              <line x1="14" y1="38" x2="58" y2="38" stroke="#334155" strokeWidth="0.6" className="sl-dash"/>
+              <line x1="14" y1="38" x2="42" y2="22" stroke="#334155" strokeWidth="0.5" opacity="0.7"/>
+              <line x1="14" y1="38" x2="42" y2="54" stroke="#334155" strokeWidth="0.5" opacity="0.7"/>
+              <line x1="326" y1="38" x2="282" y2="38" stroke="#334155" strokeWidth="0.6" className="sl-dash"/>
+              <line x1="326" y1="38" x2="298" y2="22" stroke="#334155" strokeWidth="0.5" opacity="0.7"/>
+              <line x1="326" y1="38" x2="298" y2="54" stroke="#334155" strokeWidth="0.5" opacity="0.7"/>
 
-              {/* Telemetría derecha */}
-              <line x1="322" y1="28" x2="268" y2="28" stroke="#334155" strokeWidth="0.6" className="sl-dash"/>
-              <line x1="322" y1="28" x2="292" y2="16" stroke="#334155" strokeWidth="0.5" opacity="0.7"/>
-              <line x1="322" y1="28" x2="292" y2="40" stroke="#334155" strokeWidth="0.5" opacity="0.7"/>
+              <circle cx="14"  cy="38" r="2.5" fill="#38bdf8"/>
+              <circle cx="14"  cy="38" r="4" className="sl-pulse" stroke="#38bdf8" strokeWidth="1"/>
+              <circle cx="326" cy="38" r="2.5" fill="#38bdf8"/>
+              <circle cx="326" cy="38" r="4" className="sl-pulse" stroke="#38bdf8" strokeWidth="1" style={{animationDelay:"0.9s"}}/>
 
-              {/* Puntos pulsantes */}
-              <circle cx="18"  cy="28" r="2.5" fill="#38bdf8" opacity="1"/>
-              <circle cx="18"  cy="28" r="4"   className="sl-pulse" stroke="#38bdf8" strokeWidth="1"/>
-              <circle cx="322" cy="28" r="2.5" fill="#38bdf8" opacity="1"/>
-              <circle cx="322" cy="28" r="4"   className="sl-pulse" stroke="#38bdf8" strokeWidth="1" style={{animationDelay:"0.9s"}}/>
+              <path d="M68 8 L76 8 L76 16"      fill="none" stroke="#334155" strokeWidth="0.8" opacity="0.9"/>
+              <path d="M272 8 L264 8 L264 16"   fill="none" stroke="#334155" strokeWidth="0.8" opacity="0.9"/>
+              <path d="M68 68 L76 68 L76 60"    fill="none" stroke="#334155" strokeWidth="0.8" opacity="0.9"/>
+              <path d="M272 68 L264 68 L264 60" fill="none" stroke="#334155" strokeWidth="0.8" opacity="0.9"/>
 
-              {/* Ticks de esquina */}
-              <path d="M82 10 L90 10 L90 18"    fill="none" stroke="#334155" strokeWidth="0.8" opacity="0.9"/>
-              <path d="M258 10 L250 10 L250 18" fill="none" stroke="#334155" strokeWidth="0.8" opacity="0.9"/>
-              <path d="M82 46 L90 46 L90 38"    fill="none" stroke="#334155" strokeWidth="0.8" opacity="0.9"/>
-              <path d="M258 46 L250 46 L250 38" fill="none" stroke="#334155" strokeWidth="0.8" opacity="0.9"/>
-
-              {/* Textos */}
               <g className="sl-grp">
-                <circle cx="102" cy="14" r="2.5" fill="#38bdf8" className="sl-blink"/>
-                <text x="109" y="17"
-                  fontFamily="monospace" fontSize="9" letterSpacing="2.5"
+                <circle cx="92" cy="18" r="2.2" fill="#38bdf8" className="sl-blink"/>
+                <text x="99" y="22"
+                  fontFamily="monospace" fontSize="8" letterSpacing="2.5"
                   fill="#38bdf8" opacity="0.90">SYS · ONLINE</text>
-                <text x="170" y="32"
-                  textAnchor="middle"
-                  fontFamily="system-ui, sans-serif"
-                  fontSize="14" fontWeight="500" letterSpacing="4"
-                  fill="#f1f5f9">ELEVANDO LA PRECISIÓN</text>
+
+                <text x="170" y="38"
+                  textAnchor="middle" fontFamily="system-ui, sans-serif"
+                  fontSize="13" fontWeight="500" letterSpacing="3"
+                  fill="#f1f5f9">CAPTURAMOS DATOS.</text>
+
+                <text x="170" y="54"
+                  textAnchor="middle" fontFamily="system-ui, sans-serif"
+                  fontSize="13" fontWeight="500" letterSpacing="3"
+                  fill="#cbd5e1">GENERAMOS DECISIONES.</text>
               </g>
 
-              {/* Línea inferior */}
-              <line x1="120" y1="46" x2="220" y2="46" stroke="#334155" strokeWidth="0.5" opacity="0.5"/>
+              <line x1="110" y1="64" x2="230" y2="64" stroke="#334155" strokeWidth="0.5" opacity="0.5"/>
             </svg>
           </div>
         </div>
