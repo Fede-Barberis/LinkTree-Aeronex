@@ -5,16 +5,16 @@ import { FaTiktok } from "react-icons/fa6";
 //  CONFIGURACIÓN 
 // ============================================================
 const CONFIG = {
-  nombre: "Aeronex",
-  eslogan: "Capturamos datos. Generamos decisiones.",
-  // Para usar tu logo: poné el archivo en /public y escribí "/logo.png"
-  avatar: "/logo.png",
+  nombre: "Nex",
+  eslogan: "Servicios Aéreos Profesionales",
+  // Para usar tu logo: poné el archivo en /public y escribí "/logo-nex-2.png"
+  avatar: "/logo-nex-2.png",
   links: {
-    email: "correo@aeronex.com",
-    whatsapp: "+5491100000000", 
-    instagram: "aeronex",
-    tiktok: "aeronex",
-    youtube: "@aeronex",
+    email: "nex.servicios.ar@gmail.com",
+    whatsapp: "+5493492582838", 
+    instagram: "nexaereo_",
+    tiktok: "nexaereo_",
+    youtube: "@Nexaereo",
   },
 };
 // ============================================================
@@ -154,13 +154,13 @@ export default function App() {
 
                 <text x="170" y="38"
                   textAnchor="middle" fontFamily="system-ui, sans-serif"
-                  fontSize="13" fontWeight="500" letterSpacing="3"
-                  fill="#f1f5f9">CAPTURAMOS DATOS.</text>
+                  fontSize="16" fontWeight="500" letterSpacing="3"
+                  fill="#f1f5f9">SERVICIOS AÉREOS</text>
 
                 <text x="170" y="54"
                   textAnchor="middle" fontFamily="system-ui, sans-serif"
-                  fontSize="13" fontWeight="500" letterSpacing="3"
-                  fill="#cbd5e1">GENERAMOS DECISIONES.</text>
+                  fontSize="16" fontWeight="500" letterSpacing="3"
+                  fill="#cbd5e1">PROFESIONALES</text>
               </g>
 
               <line x1="110" y1="64" x2="230" y2="64" stroke="#334155" strokeWidth="0.5" opacity="0.5"/>
