@@ -11,7 +11,7 @@ const CONFIG = {
   avatar: "/logo-nex-2.png",
   links: {
     email: "nex.servicios.ar@gmail.com",
-    whatsapp: "+5493492582838", 
+    whatsapp: "+5493492690948", 
     instagram: "nexaereo_",
     tiktok: "nexaereo_",
     youtube: "@Nexaereo",
