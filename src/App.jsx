@@ -1,4 +1,4 @@
-import { FaWhatsapp, FaInstagram, FaYoutube, FaEnvelope } from "react-icons/fa";
+import { FaWhatsapp, FaInstagram, FaYoutube, FaEnvelope, FaGlobe } from "react-icons/fa";
 import { FaTiktok } from "react-icons/fa6";
 
 // ============================================================
@@ -15,19 +15,20 @@ const CONFIG = {
     instagram: "nexaereo_",
     tiktok: "nexaereo_",
     youtube: "@Nexaereo",
+    web: "https://www.nexairdata.com.ar/"
   },
 };
 // ============================================================
 
 const links = [ 
   {
-    label: "Correo Electrónico",
-    href: `mailto:${CONFIG.links.email}`,
-    icon: FaEnvelope,
-    color: "text-sky-400",
-    bg: "bg-sky-950/60 hover:bg-sky-900/60",
-    border: "border-sky-700/50 hover:border-sky-500",
-    glow: "hover:shadow-sky-900/40",
+    label: "Website",
+    href: `https://www.nexairdata.com.ar/`,
+    icon: FaGlobe,
+    color: "text-yellow-500",
+    bg: "bg-yellow-950/60 hover:bg-yellow-900/60",
+    border: "border-yellow-700/50 hover:border-yellow-500",
+    glow: "hover:shadow-yellow-900/40",
   },
   {
     label: "WhatsApp",
@@ -38,6 +39,16 @@ const links = [
     border: "border-green-700/50 hover:border-green-500",
     glow: "hover:shadow-green-900/40",
   },
+  {
+    label: "Correo Electrónico",
+    href: `mailto:${CONFIG.links.email}`,
+    icon: FaEnvelope,
+    color: "text-sky-400",
+    bg: "bg-sky-950/60 hover:bg-sky-900/60",
+    border: "border-sky-700/50 hover:border-sky-500",
+    glow: "hover:shadow-sky-900/40",
+  },
+  
   {
     label: "Instagram",
     href: `https://instagram.com/${CONFIG.links.instagram}`,
@@ -65,6 +76,7 @@ const links = [
     border: "border-red-700/50 hover:border-red-500",
     glow: "hover:shadow-red-900/40",
   },
+  
 ];
 
 function LinkButton({ label, href, icon: Icon, color, bg, border, glow }) {
@@ -101,7 +113,7 @@ export default function App() {
             <img
               src={CONFIG.avatar}
               alt={CONFIG.nombre}
-              className="w-96 mix-blend-screen drop-shadow-lg"
+              className="w-96 sm:w-72 mix-blend-screen drop-shadow-lg"
             />
           ) : (
             // Fallback: círculo con inicial cuando no hay logo
@@ -169,7 +181,7 @@ export default function App() {
         </div>
 
         {/* Links */}
-        <div className="w-full flex flex-col gap-3">
+        <div className="w-full flex flex-col gap-2.5">
           {links.map((link) => (
             <LinkButton key={link.label} {...link} />
           ))}
