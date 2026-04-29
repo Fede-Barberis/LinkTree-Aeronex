@@ -106,14 +106,14 @@ export default function App() {
       <div className="w-full max-w-md flex flex-col items-center gap-8">
 
         {/* Logo / Avatar */}
-        <div className="flex flex-col items-center gap-1">
+        <div className="flex flex-col items-center gap-1 m-2 md:m-0">
           {CONFIG.avatar ? (
             // Logo: se muestra ancho, sin círculo. mix-blend-screen fusiona el
             // fondo negro del logo con el fondo oscuro de la página.
             <img
               src={CONFIG.avatar}
               alt={CONFIG.nombre}
-              className="w-96 sm:w-72 mix-blend-screen drop-shadow-lg"
+              className="w-80 sm:w-96 mix-blend-screen drop-shadow-lg"
             />
           ) : (
             // Fallback: círculo con inicial cuando no hay logo
